@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #e4e9f7;
+
+}
+
+
+#img {
+    height: 783px;
+    width: 57.92%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.box {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+        0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.form-box {
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.form-box form .field {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+
+.form-box form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.form-box form .input select {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.btn {
+    height: 35px;
+    background: rgba(76, 68, 182, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.btn:hover {
+    opacity: 0.82;
+}
+
+.submit {
+    width: 100%;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+/********* Home *****************/
+
+/*
+    MENU DA PAGINA
+*/
+
+.logo {
+    width: 300px;
+    margin-right: 50%;
+}
+
+#btn-log {
+    width: 150px;
+    height: 30px;
+    background-color: #71318d;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#btn-log > a {
+    text-decoration: none;
+    color: white;
+}
+
+#btn-log:hover {
+    background-color: #7d5b8c;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+.nav {
+    background: #6145c5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 100;
+    height: 20vh;
+    box-shadow: 20px 25px 53px -13px rgba(179,172,179,0.63);
+    -webkit-box-shadow: 20px 25px 53px -13px rgba(179,172,179,0.63);
+    -moz-box-shadow: 20px 25px 53px -13px rgba(179,172,179,0.63);
+
+}
+
+
+/*
+    PARTE PRINCPAL DA PAGINA
+*/
+
+main {
+
+    width: 60vw; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.criarProjeto  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin: 20px;
+}
+
+
+#btn-nav {
+    padding: 20px;
+    margin: 10px;
+    background-color: #7d5b8c;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+#btn-nav:hover {
+    background-color: #b381c9;
+}
+
+.bottom {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.projetos{
+    background-color: aliceblue;
+}
+
+.projetosFamosos, .projetosAndamento, .projetosAnalise {
+    display: flex;
+    flex-direction: row; 
+    width: 60vw;
+    margin: 10px;
+    box-shadow: 20px 25px 53px -13px rgba(179,172,179,0.63);
+    -webkit-box-shadow: 20px 25px 53px -13px rgba(179,172,179,0.63);
+    -moz-box-shadow: 20px 25px 53px -13px rgba(179,172,179,0.63);
+}
+
+.boxInformations {
+    margin: 5px;
+    background-color:#fff;
+    border-radius: 10px;
+}
+
+.containerInformations{
+    margin: 5%;
+}
+
+.titleProject {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.textProject {
+    text-align: justify;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+#imgProject {
+    width: 100%;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+#btn-link-project {
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #7d5b8c;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+#btn-link-project:hover {
+    background-color: #b381c9;
+}
+
+#rodape {
+    width: 100vw;
+    height: 110px;
+    background-color: #71318d;
+}
+
+
+
+
+/*Pagina de Registro*/
+
+caixa{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+        0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.form-caixa{
+    width: 450vh;
+    margin: 0px 10px;
+}
+
+.form-caixa header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+    text-align-last: center;
+}
+
+.form-caixa form .field {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+
+.form-caixa form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.form-caixa form .input select {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.text-white{
+    color: none;
+}

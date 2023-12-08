@@ -1,0 +1,77 @@
+body {
+    background-image: url(../img/WhatsApp-Image-2021-03-27-at-10.47.21.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.divisoria-form {
+    margin-left: 100px;
+}
+
+form {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    margin-top: 200px;
+}
+
+h1 {
+    top: 20%;
+    left: 40%;
+    position: absolute;
+    font-size: 24px;
+    margin: 0 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color:  #6145c5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #6145c5;
+}
+
+input[type="date"],
+select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
