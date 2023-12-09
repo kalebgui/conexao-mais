@@ -1,6 +1,7 @@
 INSERT INTO `tb_perfil` (`descricao`) VALUES ('protocolo');
 INSERT INTO `tb_perfil` (`descricao`) VALUES ('Prefeito comunitario');
 INSERT INTO `tb_perfil` (`descricao`) VALUES ('suporte');
+INSERT INTO `tb_perfil` (`descricao`) VALUES ('desativado');
 
 
 INSERT INTO `tb_usuario` ( `login`, `senha`, `idperfil`) VALUES
@@ -38,7 +39,8 @@ INSERT INTO `tb_status` (`idstatus`, `tipo_status`) VALUES
 ( 1, 'pendente'),
 ( 2, 'Em análise'),
 ( 3, 'Deferido'),
-( 4, 'Não deferido');
+( 4, 'Não deferido'),
+( 5, 'desativo');
 
 
 

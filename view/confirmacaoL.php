@@ -56,8 +56,10 @@
   <div class="alert">
     <h2>Exclusão de Dados</h2>
     <p>Tem certeza que deseja excluir esses dados permanentemente?</p>
-    <form method="post" action="../controller/excluirPrefeitocontroller.php?id=<?php echo $idprefeitura?>">
+    <form method="post" action="../controller/desativarcontroller.php?id=<?php echo $idprefeitura?>">
     <input name="usuario" value="<?=$usuario?>" type="hidden">
+    <input name="idperfil" value="4" type="hidden">
+    <input name="idstatus" value="5" type="hidden">
       <button type="submit" name="confirm">Sim, excluir</button>
       <button type="button" onclick="window.location.href='../view/perfillider.php'">Cancelar</button>
     </form>

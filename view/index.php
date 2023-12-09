@@ -43,11 +43,11 @@
                                     <label for="cpf">CPF:</label>
                                     <input type="text" class="form-control"  placeholder="Coloque seu CPF:" name="cpf">
                                     <label for="dt_nasc">Data de Nascimento:</label>
-                                    <input type="date" class="form-control" placeholder="Coloque sua Data de Nascimento" name="dt_nasc">
+                                    <input type="date" class="form-control" id="txtdata_nasc" placeholder="Coloque sua Data de Nascimento" name="dt_nasc">
                                 </div>
                                 <div class="form-group">
                                     <label for="telefone">Telefone:</label>
-                                    <input type="text" class="form-control"  placeholder="Coloque seu Telefone:" name="telefone">
+                                    <input type="tel" maxlength="15" onkeyup="handlePhone(event)" class="form-control" placeholder="Coloque seu Telefone:" name="telefone">
                                 </div>
                                 
                             </div>
@@ -177,7 +177,7 @@
         </form>
     </div>
 
-
+    <script src="../view/js/mascaratel.js"></script>
     <script src="../view/js/script.js"></script>
 </body>
 

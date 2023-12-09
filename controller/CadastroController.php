@@ -6,11 +6,21 @@ require_once '../DTO/Tb_prefeito_comunitarioDTO.php';
 require_once '../DAO/Tb_usuarioDAO.php';
 require_once '../DTO/Tb_usuarioDTO.php';
 
+$dt_nasc = $_POST["dt_nasc"];
+
+$numero = intval($dt_nasc);
+
+$data_atual = date("Y");
+$numero2 = intval($data_atual);
+
+      $idade = $numero2 - $numero;
+
+if($idade >= 18){
+
 $usuario = $_POST["usuario"];
 $email = $_POST["email"];
 $senha = md5($_POST["senha"]);
 $cpf = $_POST["cpf"];
-$dt_nasc = $_POST["dt_nasc"];
 $telefone = $_POST["telefone"];
 $endereco = $_POST["endereco"];
 $genero = $_POST["genero"];
@@ -50,4 +60,11 @@ $idperfil = $_POST["idperfil"];
         echo "window.location.href = '../view/principal.php';";
         echo "</script> ";
      }
+
+    }elseif($idade < 18){
+        echo "<script>";
+        echo "alert ('Você não possui 18 anos!');";
+        echo "window.location.href = '../view/index.php';";
+        echo "</script> ";
+    }
 ?>

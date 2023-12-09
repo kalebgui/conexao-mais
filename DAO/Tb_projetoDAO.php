@@ -65,6 +65,15 @@ class Tb_projetoDAO {
         
         return $execucao ->execute();
     }
+     public function desativar(Tb_projetoDTO $Tb_projetoDTO){
+        $pdo = Conexao::getInstance();
+        $sql = "update tb_projeto set idstatus =? where idprefeitura = ?;";
+        $execucao = $pdo ->prepare($sql);;
+        $execucao ->bindValue(1,$Tb_projetoDTO->getIdstatus());
+        $execucao ->bindValue(2,$Tb_projetoDTO->getIdprefeitura());
+        
+        return $execucao ->execute();
+    }
     
        public function pesquisar(){
          $pdo = Conexao::getInstance();

@@ -22,14 +22,22 @@ if ($resultado) {
     $_SESSION["login"] = $resultado["login"];
     $_SESSION["descricao"] = $resultado["descricao"];
     $_SESSION["idusuario"] = $resultado["idusuario"];
-
+    if(($_SESSION["descricao"] == 'protocolo') or ($_SESSION["descricao"] == 'Prefeito comunitario') or ($_SESSION["descricao"] == 'suporte')){
     echo "<script>";
     echo "window.location.href='../view/principal.php';";
     echo "</script>";
+}elseif($_SESSION["descricao"] == 'desativado'){
+    echo "<script>";
+    echo "alert ('perfil excluido! Entre em contato com o suporte');";
+    echo "window.location.href='../view/index.php';";
+    echo "</script>";
+}
 } else {
     echo "<script>";
     echo "alert ('Login ou senha incorretos!');";
     echo "window.location.href='../view/index.php';";
     echo "</script>";
 }
+
+
 ?>

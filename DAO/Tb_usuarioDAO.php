@@ -35,6 +35,15 @@ class Tb_usuarioDAO {
         
         return $execucao ->execute();
     }
+     public function desativar(Tb_usuarioDTO $Tb_usuarioDTO){
+        $pdo = Conexao::getInstance();
+        $sql = "update tb_usuario set idperfil=? where idusuario = ?;";
+        $execucao = $pdo ->prepare($sql);
+        $execucao ->bindvalue(1,$Tb_usuarioDTO->getidperfil());
+        $execucao ->bindValue(2,$Tb_usuarioDTO->getIdusuario());
+        
+        return $execucao ->execute();
+    }
      public function AlterarSenha(Tb_usuarioDTO $Tb_usuarioDTO){
         $pdo = Conexao::getInstance();
         $sql = "update tb_usuario set senha=? where login = ?;";

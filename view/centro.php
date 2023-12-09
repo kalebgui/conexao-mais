@@ -141,7 +141,12 @@
                 }
               }
               break;
-        }
+        default:
+        echo "<script>";
+        echo "window.location.href = '../controller/logoffController.php';";
+        echo "</script> ";
+        break;
+      }
         ?>
       </div>
     </div>
